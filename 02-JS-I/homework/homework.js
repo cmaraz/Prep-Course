@@ -41,7 +41,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x;
+  return x - y;
 }
 
 function multiplica(x, y) {
@@ -132,7 +132,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Math.pow (num * 2)
+  return Math.pow (num, 2);
 }
 
 function elevarAlCubo(num) {
