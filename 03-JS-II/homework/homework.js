@@ -151,22 +151,32 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
-  let tabladelseis = [0];
-  for ( let i=1; i < 11; i++){
+  let tablaDelSeis = [0];
+  for (let i = 1; i < 11; i++) {
+    tablaDelSeis.push (6*i);
   }
-  return tabladelseis;
+  return tablaDelSeis;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  let str = String(numero).length
+  if (str === 3) return true;
+  return false;
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let contador = 0;
+  let suma = numero;
+  do {
+      suma = suma + 5;
+      contador ++;
+  } while(contador < 8)
+  return suma;
 }
 
 
