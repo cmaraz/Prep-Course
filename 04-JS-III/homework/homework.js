@@ -204,6 +204,12 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let nuevoArray = []
+   for ( let i = 0; i < array.length; i++) {
+    if(array [i] > 100)
+    nuevoArray.push(array[i])
+   }
+   return nuevoArray
 }
 
 
@@ -215,6 +221,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let newArray = [];
+
+  for (var i = 0; i < 10; i++){
+  numero = numero + 2;
+  newArray.push(numero);
+  if (numero === i) break;
+  }
+  if (numero === i) return "Se interrumpió la ejecución";
+  return newArray;
 }
 
 
@@ -225,6 +240,14 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let array = [];
+
+  for (let i = 0; i < 10; i++){
+    if (i === 5) continue;
+    numero = numero + 2;
+    array.push(numero)
+  }
+  return array;
 }
 
 
